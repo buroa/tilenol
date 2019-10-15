@@ -133,14 +133,6 @@
   version = "v1.2.0"
 
 [[projects]]
-  digest = "1:2a3e04c19aaa96fe8ddc4d50a5cc921e7d8337f0cbb388d8063a425d35b95162"
-  name = "github.com/stationa/tilenol"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "0da391a9a7451d047f034b6fc1bdc64bde8133db"
-  version = "v1.0.1"
-
-[[projects]]
   branch = "master"
   digest = "1:38f553aff0273ad6f367cb0a0f8b6eecbaef8dc6cb8b50e57b6a81c1d5b1e332"
   name = "golang.org/x/crypto"
@@ -197,7 +189,6 @@
     "github.com/paulmach/orb/maptile",
     "github.com/paulmach/orb/simplify",
     "github.com/sirupsen/logrus",
-    "github.com/stationa/tilenol",
     "golang.org/x/sync/errgroup",
     "gopkg.in/alecthomas/kingpin.v2",
     "gopkg.in/go-yaml/yaml.v2",

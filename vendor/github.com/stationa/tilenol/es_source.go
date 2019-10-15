@@ -71,9 +71,8 @@ func (d *Dict) Map() map[string]interface{} {
 // Elasticsearch cluster
 func NewElasticsearchSource(config *ElasticsearchConfig) (Source, error) {
 	es, err := elastic.NewClient(
-		elastic.SetURL(fmt.Sprintf("https://%s:%d", config.Host, config.Port)),
-		elastic.SetGzip(false),
-		elastic.SetSniff(false),
+		elastic.SetURL(fmt.Sprintf("http://%s:%d", config.Host, config.Port)),
+		elastic.SetGzip(true),
 		// TODO: Should this be configurable?
 		elastic.SetHealthcheckTimeoutStartup(10*time.Second),
 	)

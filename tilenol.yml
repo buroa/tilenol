@@ -1,0 +1,12 @@
+# Layer configuration
+layers:
+  - name: pilot_geoint
+    minzoom: 14
+    source:
+      elasticsearch:
+        host: vpc-kdis-5srfjampd2xyqv5twlwl37m6bi.us-east-1.es.amazonaws.com
+        port: 443
+        index: pilot_geoint
+        geometryField: DetectedObjects.features.geometry
+        sourceFields:
+          properties: DetectedObjects.features.properties
